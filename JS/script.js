@@ -30,12 +30,12 @@ const renderPokemon = async (pokemon) => {
         pokemonImage.style.display = 'block';
         pokemonName.innerHTML = data.name;
         pokemonNumber.innerHTML = data.id
-        pokemonImage.src =data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']; 
+        pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']; 
         imput.value = '';
         searchPokemon = data.id;
-    } 
-    else {
-        pokemonName.innerHTML = 'Not Found :c';
+    } else {
+        pokemonName.innerHTML = 'Not found';
+        pokemonNumber.innerHTML = "#"
     }
 }
 
@@ -54,6 +54,7 @@ buttonPrev.addEventListener('click', () => {
 });
 
 buttonNext.addEventListener('click', () => {
+    if (searchPokemon <1010)
     searchPokemon += 1;
     renderPokemon (searchPokemon);
    });
@@ -61,8 +62,8 @@ buttonNext.addEventListener('click', () => {
 
 renderPokemon(searchPokemon);
 
-const btn = document.getElementById("btn.dark");
-btn.addEventListener("change", (e) => {
-    document.body.classList.toggle("dark" , e.target.checked);
+const check = document.getElementById("check")
+check.addEventListener("change", () => {
+    document.body.classList.toggle("dark");
 
 })

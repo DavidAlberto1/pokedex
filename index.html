@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="hydrated">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./CSS/style.css">
     
     <script defer src="./JS/script.js"></script>
-
+    <script src="https://kit.fontawesome.com/3ad7ee9e31.js" crossorigin="anonymous"></script>
+    
     <title>Pokedex</title>
 </head>
 <body>
@@ -32,10 +33,17 @@
             <button class="button btn-next">Next &gt</button>
 
         </div>
-        <div class="container">
-            <input type="checkbox" id="btn.dark" name="btn.dark">
-            <label for="btn.dark"></label>
+
+        <div>
+            <input type="checkbox" class="checkbox" id="check">
+            <label class="label" for="check">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+                <div class="ball"></div>
+            </label>
+
         </div>
+    
 
         <img src="imagens/pokedex.png" alt="pokedex" class="pokedex">
     </main>

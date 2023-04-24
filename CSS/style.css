@@ -14,7 +14,7 @@ body {
 
 body.dark {
     text-align: center;
-background-image: linear-gradient(to bottom, rgb(9, 0, 48), rgb(43, 0, 40));
+background-image: linear-gradient(to bottom, rgb(20, 1, 105), rgb(43, 0, 40));
 transition: background 0.5s linear;
 color: white;
 background-repeat: no-repeat;

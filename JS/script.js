@@ -11,8 +11,7 @@ let searchPokemon = 1;
 const fetchPokemon = async (pokemon) => {
     const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
     
-    if (APIResponse.status = 200) {
-
+    if (APIResponse.status == 200) {
         const data = await APIResponse.json();
         return data;
     }
@@ -27,15 +26,13 @@ const renderPokemon = async (pokemon) => {
     const data = await fetchPokemon(pokemon);
 
     if (data) {
-        pokemonImage.style.display = 'block';
         pokemonName.innerHTML = data.name;
         pokemonNumber.innerHTML = data.id
         pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default']; 
         imput.value = '';
-        searchPokemon = data.id;
-    } else {
+    } else { 
         pokemonName.innerHTML = 'Not found';
-        
+        pokemonNumber.innerHTML = '#';
     }
 }
 
@@ -72,8 +69,8 @@ var pokedex = "imagens/pokedex.png";
 var pokedexnoite = "imagens/pokedexnoite.png";
 
 function change (){
-document.getElementById("pokedex").src = pokedex;
-let aux = pokedex;
-pokedex = pokedexnoite;
-pokedexnoite = aux;
+document.getElementById("pokedex").src = pokedexnoite;
+let aux = pokedexnoite;
+pokedexnoite = pokedex;
+pokedex = aux;
 }

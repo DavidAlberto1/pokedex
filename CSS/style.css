@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 
@@ -29,7 +30,7 @@ main{
 
 
 .pokedex {
-    width: 80%;
+    width: 100%;
     max-width: 450px;
 }
 
@@ -47,8 +48,8 @@ main{
     font-weight: 300;
     color: rgb(66, 66, 66);
     top: 55%;
-    left: 30%;
-    font-size: clamp(5px, 5vw, 32px)
+    left: 25%;
+    font-size: clamp(5px, 6vw, 32px)
 }
 
 .pokemon_name{

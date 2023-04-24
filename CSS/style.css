@@ -9,12 +9,16 @@ body{
     text-align: center;
     background-image: linear-gradient(to bottom, rgb(104, 104, 247), rgb(82, 255, 82));
     transition: background 0.5s linear;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body.dark{
-background-image: linear-gradient(to bottom, rgb(11, 0, 48), rgb(0, 53, 7));
+background-image: linear-gradient(to bottom, rgb(9, 0, 48), rgb(43, 0, 40));
 transition: background 0.5s linear;
 color: white;
+background-repeat: no-repeat;
+background-size: cover;
 }
 main{
     display: inline-block;
@@ -42,9 +46,9 @@ main{
     position: absolute;
     font-weight: 300;
     color: rgb(66, 66, 66);
-    top: 54%;
+    top: 55%;
     left: 30%;
-    font-size: clamp(5px, 6vw, 32px)
+    font-size: clamp(5px, 5vw, 32px)
 }
 
 .pokemon_name{

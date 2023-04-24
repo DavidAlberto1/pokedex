@@ -35,7 +35,7 @@ const renderPokemon = async (pokemon) => {
         searchPokemon = data.id;
     } else {
         pokemonName.innerHTML = 'Not found';
-        pokemonNumber.innerHTML = "#"
+        
     }
 }
 
@@ -65,5 +65,15 @@ renderPokemon(searchPokemon);
 const check = document.getElementById("check")
 check.addEventListener("change", () => {
     document.body.classList.toggle("dark");
-
 })
+
+
+var pokedex = "imagens/pokedex.png";
+var pokedexnoite = "imagens/pokedexnoite.png";
+
+function change (){
+document.getElementById("pokedex").src = pokedex;
+let aux = pokedex;
+pokedex = pokedexnoite;
+pokedexnoite = aux;
+}

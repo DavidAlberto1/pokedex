@@ -2,11 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-
-body{
+body {
     text-align: center;
     background-image: linear-gradient(to bottom, rgb(104, 104, 247), rgb(82, 255, 82));
     transition: background 0.5s linear;
@@ -14,14 +12,16 @@ body{
     background-size: cover;
 }
 
-body.dark{
+body.dark {
+    text-align: center;
 background-image: linear-gradient(to bottom, rgb(9, 0, 48), rgb(43, 0, 40));
 transition: background 0.5s linear;
 color: white;
 background-repeat: no-repeat;
 background-size: cover;
 }
-main{
+
+main {
     display: inline-block;
     margin-top: 4%;
     padding: 20px;
@@ -34,7 +34,7 @@ main{
     max-width: 450px;
 }
 
-.pokemon_image{
+.pokemon_image {
     position: absolute;
     width: 22%;
     left: 35%;
@@ -48,15 +48,15 @@ main{
     font-weight: 300;
     color: rgb(66, 66, 66);
     top: 55%;
-    left: 25%;
-    font-size: clamp(5px, 6vw, 32px)
+    left: 23%;
+    font-size: clamp(5px, 7vw, 32px)
 }
 
-.pokemon_name{
+.pokemon_name {
     color: rgb(51, 51, 51);
     text-transform: capitalize;
 }
-.form{
+.form {
     position: absolute;
     width: 70%;
     top: 65%;
@@ -64,7 +64,7 @@ main{
     display: block;
 }
 
-.imput_search{
+.imput_search {
 width: 78%;
 padding: 3%;
 outline: none;
@@ -73,42 +73,39 @@ font-size: clamp(10px, 7vw, 15px);
 box-shadow: -2px 2px 0 grey, -4px 3px 0 black;
 }
 
-.buttons{
+.buttons {
 position: absolute;
-bottom: 13%;
+bottom: 15%;
 left: 17%;
 width: 60%;
 transform: translate(-25%, 50);
 display: flex;
-gap: 15%;
+gap: 20%;
 }
 
-.button{
+.button {
     width: 60%;
     padding: 5%;
     border: 2px solid black;
     border-radius: 5px;
-    font-size: clamp(20px, 10vw, 20px);
+    font-size: clamp(16px, 9vw, 16px);
     font-weight: 600;
     color: white;
     background-color: #444;
     box-shadow: -1px 1px 0 #222, -2px 2px 0 black;
-
 }
 
-.buttons :active{
+.buttons :active {
   box-shadow: inset 2px 2px 0 grey;
   font-size: 0.9rem;
-
 }
 
-.checkbox{
+.checkbox {
     opacity: 0;
     position: absolute;
 }
 
-.label{
-    top: -4%;
+.label {
 background-color: black;
 border-radius: 50px;
 cursor: pointer;
@@ -118,10 +115,11 @@ padding: 2px;
 position: absolute;
 height: 23px;
 width: 50px;
+top: -8px;
 transform: scale(1.3);
 }
 
-.label .ball{
+.label .ball {
 background-color: white;
 border-radius: 50%;
 position: absolute;
@@ -131,20 +129,18 @@ height: 19px;
 width: 19px;
 transform: translateX(0px);
 transition: transform 0.2s linear;
-
 }
 
-.checkbox:checked + .label .ball{
+.checkbox:checked + .label .ball {
 transform: translateX(26px);
-
 }
 
-.fa-sun{
+.fa-sun {
     color: rgb(255, 208, 0);
     padding: 1px;
     width: 18px;
 }
-.fa-moon{
+.fa-moon {
     color: yellow;
     padding: 1px;
     width: 18px;

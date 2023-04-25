@@ -10,6 +10,7 @@ body {
     transition: background 0.5s linear;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
 }
 
 body.dark {
@@ -19,6 +20,7 @@ transition: background 0.5s linear;
 color: white;
 background-repeat: no-repeat;
 background-size: cover;
+min-height: 100vh;
 }
 
 main {

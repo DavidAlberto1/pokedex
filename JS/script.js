@@ -33,6 +33,7 @@ const renderPokemon = async (pokemon) => {
     } else { 
         pokemonName.innerHTML = 'Not found';
         pokemonNumber.innerHTML = '#';
+        pokemonImage.src = '#';
     }
 }
 
